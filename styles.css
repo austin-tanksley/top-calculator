@@ -1,12 +1,18 @@
 * {
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
     display: flex;
     align-items: center;
     min-height: 95vh;
+    background-color: dimgray;
 }
 .container {
+    border-radius: 10px;
+    border: 10px;
+    border-style: solid;
+    border-color: orangered;
     background-color: lightgray;
     max-width: max-content;
     margin: auto;
@@ -16,9 +22,14 @@ body {
 }
 .display {
     background-color: darkgrey;
+    height: 80px;
     font-size: 48px;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+    border-radius: 10px;
+    margin: 10px;
 }
 .display p{
     margin: 0px;
@@ -27,8 +38,10 @@ body {
     max-width: 400px;
     display: flex;
     flex-wrap: wrap;
+    height: 400px;
 }
 
 button {
     flex: 1 25%;
+    font-size: 26px;
 }
