@@ -94,7 +94,8 @@ btnClear.addEventListener('click',()=>{
     answerState = false;
 });
 
-//feature to add: minus either makes number negative or changes opereator based on current state
+//feature to add: minus either makes number negative or 
+//changes opereator based on current state
 btnOps.forEach((button)=> {
     button.addEventListener('click', ()=>{
         const buttonValue = button.getAttribute('data-num');
