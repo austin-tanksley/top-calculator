@@ -108,12 +108,19 @@ btnOps.forEach((button)=> {
 });
 
 btnEqual.addEventListener('click',() => {
-   const answer = operate(Number(num1), Number(num2),operator);
-   displayContent = String(answer);
-   updateDisplay();
-   operator = '';
-   operateEmpty = true;
-   num1 = displayContent;
-   num2 = '';
-   answerState = true;
+    if (operator == '÷' && num2 == '0'){
+        displayContent = "DiViDe By zErO?";
+        updateDisplay();
+        num1 = '';
+   }
+    else {
+        const answer = operate(Number(num1), Number(num2),operator);
+        displayContent = String(answer);
+        updateDisplay();
+        num1 = displayContent;
+   }
+    num2 = '';
+    operator = '';
+    operateEmpty = true;
+    answerState = true;
 });
